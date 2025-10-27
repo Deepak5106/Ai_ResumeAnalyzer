@@ -57,7 +57,7 @@ function App() {
         JSON Schema:
         {
           "score": <integer>,
-          "justification": "<string>",
+          "justification": ["<string>"],
           "improvements": [
             "<string>",
             "<string>"
@@ -70,6 +70,10 @@ function App() {
   const fn = async () => {
     try {
       const promptText = (jdText && jdText.length > 10) ? jdpromt : promt;
+      if (!resumeText || resumeText.trim().length < 10) {
+  setAns("Please paste a valid resume first.");
+  return;
+}
       const res = await puter.ai.chat(promptText, {
   temperature: 0,
   // top_p: 1,
@@ -134,7 +138,7 @@ function App() {
   }
       {just && just.length > 0 && 
     <div>
-      <h3>Improvements:</h3>
+      <h3>Justification:</h3>
       <ul>
         {just.map((item, index) => (
           <li key={index}>{item}</li>

@@ -1,6 +1,7 @@
 :root{
-  --backgroucolor: #000000;
+  --backgroucolor: #4d2db4;
 }
+@import "tailwindcss";
 /* body{
   background-color: var(--backgroucolor);
 } */
