@@ -1,16 +1,44 @@
-# React + Vite
+# 🧠 AI Resume Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **serverless AI-powered Resume Analyzer** that intelligently evaluates resumes using `puter.js`.  
+This app helps users understand how well their resume matches a job description — providing instant, private, and efficient insights directly from the browser.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- ⚡ **Serverless Architecture:** Built entirely using `puter.js` — no backend servers or databases required.  
+- 🧾 **Resume Parsing:** Extracts key information such as skills, experience, and education.  
+- 🤖 **AI-Powered Scoring:** Uses LLM-based analysis to rate resumes against job descriptions.  
+- 🔒 **Privacy First:** All processing happens locally or via secure, temporary compute sessions.  
+- 🌐 **Zero Setup:** Simply run it in the browser — no deployment or API keys needed.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Component | Technology |
+|------------|-------------|
+| Frontend | React + Vite |
+| AI Runtime | [puter.js](https://puter.com/docs/puter-js/) |
+| Language | JavaScript (ESM) |
+| Styling | TailwindCSS |
+| Deployment | None yet (local testing) |
+
+---
+
+## 📦 Installation & Setup
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Deepak5106/Ai_ResumeAnalyzer.git
+
+# 2. Navigate to the project folder
+cd Ai_ResumeAnalyzer
+
+# 3. Install dependencies
+npm install
+
+# 4. Run locally
+npm run dev
+
